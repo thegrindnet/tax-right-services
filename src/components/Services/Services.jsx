@@ -27,17 +27,13 @@ function Services() {
           </p>
         </div>
         <div className="services__grid">
-          {services.map((service, index) => (
+          {services.map((service) => (
             <article
               className={`services__card ${
                 service.featured ? "services__card--featured" : ""
               }`}
               key={service.id}
             >
-              {/* <div className="services__card-top">
-                <Icon name={service.icon} />
-                <span>0{index + 1}</span>
-              </div> */}
               <h3>
                 {service.title}
                 {service.id === "notary" && <sup>*</sup>}
