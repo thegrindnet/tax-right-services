@@ -1,0 +1,25 @@
+.contact { background: var(--navy); color: white; }
+.contact__layout { display: grid; grid-template-columns: 1.4fr 1fr; gap: 100px; }
+.contact .eyebrow { color: var(--lime); }
+.contact .section-title { font-size: clamp(2.1rem, 3.8vw, 3.2rem); }
+.contact .section-title span { color: #c4d5ff; }
+.contact__intro > p:not(.eyebrow) { color: #d1ddf3; max-width: 510px; }
+.contact__actions { display: flex; flex-wrap: wrap; gap: 14px; margin: 28px 0; }
+.contact__actions .button { gap: 12px; font-size: .9375rem; }
+.contact__intro .contact__spanish { font-size: .9375rem; color: #e4eab1; margin-bottom: 0; }
+.contact__details { border-left: 1px solid #395387; padding-left: 48px; }
+.contact__detail { display: flex; align-items: flex-start; gap: 17px; padding-block: 23px; border-bottom: 1px solid #395387; }
+.contact__detail:first-child { padding-top: 0; }
+.contact__detail:last-child { border-bottom: 0; padding-bottom: 0; }
+.contact__detail > .icon { color: var(--lime); width: 22px; }
+.contact__detail > div { min-width: 0; }
+.contact__detail h3 { font-size: 1rem; margin-bottom: 10px; font-weight: 650; }
+.contact__detail p { font-size: .9375rem; margin-bottom: 8px; color: #d1ddf3; }
+.contact__detail a { font-size: .9375rem; overflow-wrap: anywhere; line-height: 1.6; }
+.contact__detail a:hover { color: var(--lime); }
+.contact__detail .contact__small { font-size: .8125rem; margin: 8px 0 0; color: #becde9; }
+.contact__detail .contact__appointment { color: #e4eab1; margin: 0; }
+.contact__detail .contact__fax { margin: 10px 0 0; }
+.contact :focus-visible { outline-color: var(--lime); }
+@media (max-width: 1000px) { .contact__layout { gap: 45px; } .contact__details { padding-left: 28px; } }
+@media (max-width: 750px) { .contact__layout { grid-template-columns: 1fr; gap: 40px; } .contact__details { border-left: 0; padding-left: 0; } .contact__actions { align-items: stretch; flex-direction: column; } }

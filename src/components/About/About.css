@@ -1,0 +1,23 @@
+.about { background: var(--pale); }
+.about__layout { display: grid; grid-template-columns: 1.1fr 1fr; gap: 100px; }
+.about__intro > p:not(.eyebrow) { color: var(--muted); }
+.about__intro .about__lead { color: var(--ink); font-size: 1.15rem; font-weight: 600; line-height: 1.6; }
+.about__intro .text-link { margin-top: 12px; }
+.about__quote { border-left: 3px solid var(--lime); padding: 0 0 0 25px; position: relative; margin: 0 0 28px; }
+.about__quote-mark { color: var(--blue); font: 4.5rem/.7 Georgia, serif; display: block; }
+.about__quote p { color: var(--navy); font: italic 1.8rem/1.4 Georgia, serif; margin: 8px 0 12px; }
+.about__quote > span:last-child { color: var(--muted); font-size: .875rem; }
+.about__commitments { list-style: none; padding: 0; margin: 0; }
+.about__commitments li { display: flex; gap: 16px; align-items: flex-start; margin-bottom: 22px; }
+.about__icon { display: grid; place-items: center; color: var(--blue); width: 44px; height: 44px; background: white; border: 1px solid var(--line); border-radius: 6px; flex-shrink: 0; }
+.about__commitments h3 { font-size: 1rem; font-weight: 650; margin-bottom: 4px; }
+.about__commitments p { font-size: .9375rem; color: var(--muted); margin: 0; line-height: 1.5; }
+.about__flyer { display: flex; align-items: center; gap: 20px; padding: 16px; border: 1px solid var(--line); border-radius: 6px; background: white; text-decoration: none; }
+.about__flyer img { width: 68px; height: auto; border: 1px solid var(--line); }
+.about__flyer > span { font-size: .8125rem; color: var(--muted); line-height: 1.5; }
+.about__flyer strong { display: flex; align-items: center; gap: 8px; margin-top: 5px; color: var(--blue); font-size: .9375rem; }
+.about__flyer .icon { width: 18px; }
+.about__flyer:hover { border-color: var(--blue); }
+@media (max-width: 950px) { .about__layout { gap: 45px; } }
+@media (max-width: 750px) { .about__layout { grid-template-columns: 1fr; gap: 50px; } }
+@media (max-width: 400px) { .about__flyer { gap: 12px; padding: 12px; } .about__flyer strong { flex-wrap: wrap; } }
