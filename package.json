@@ -3,6 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
+  "homepage": "https://www.taxrightservices.com",
   "engines": {
     "node": ">=24.0.0"
   },
