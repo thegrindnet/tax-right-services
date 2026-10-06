@@ -1,4 +1,4 @@
-import portrait from "../assets/images/carolina-santiago.png";
+import portrait from "../assets/images/carolina-santiago.jpeg";
 import logo from "../assets/images/tax-right-services-logo.webp";
 import flyer from "../assets/images/tax-right-services-flyer.webp";
 
@@ -20,7 +20,7 @@ export const business = {
   mapHref:
     "https://www.google.com/maps/search/?api=1&query=Mesquite%2C%20New%20Mexico",
   // Supply the actual business Facebook URL here. An empty value shows plain text.
-  facebookUrl: "",
+  facebookUrl: "https://www.facebook.com/share/1CNcFUgzwY/?mibextid=wwXIfr",
 };
 
 export const images = { portrait, logo, flyer };
